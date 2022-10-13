@@ -32,6 +32,7 @@ class ThemeConfig {
     ),
     inputDecorationTheme: InputDecorationTheme(
       fillColor: Colors.white,
+      filled: true,
       isDense: true,
       contentPadding: const EdgeInsets.all(13),
       border: _defaultInputBorder,
