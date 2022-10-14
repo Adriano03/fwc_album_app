@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fwc_album_app/app/core/ui/styles/colors_app.dart';
 
-import 'package:fwc_album_app/repository/auth/auth_repository.dart';
+import 'package:fwc_album_app/app/repository/auth/auth_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';

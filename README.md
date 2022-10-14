@@ -41,4 +41,8 @@ Aula 4 (passos)
 - Implementar grids de países;
 - Implementação de filtros;
 
+Aula 5 - FINAL (passos)
+- Organização das pastas;
+- Contruir tela detalhes figurinhas;
+- 
 
