@@ -32,3 +32,13 @@ Aula 3 (passos)
 - Implementando busca de dados dos usuários e album;
 - Implementando tela;
 - Finalizando com o click para a tela de minhas figurinhas;
+
+Aula 4 (passos)
+- Entendendo o serviço de busca;
+- Preparando o modelo;
+- Buscando dados álbuns;
+- Construção da page Minhas Figurinhas;
+- Implementar grids de países;
+- Implementação de filtros;
+
+
