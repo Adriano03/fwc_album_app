@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+
 import 'dart:convert';
 
 import 'user_sticker_model.dart';
@@ -22,7 +23,7 @@ class GroupsStickers {
   });
 
   Map<String, dynamic> toMap() {
-    return <String, dynamic>{
+    return {
       'id': id,
       'country_code': countryCode,
       'country_name': countryName,
@@ -35,22 +36,19 @@ class GroupsStickers {
 
   factory GroupsStickers.fromMap(Map<String, dynamic> map) {
     return GroupsStickers(
-      id: map['id'] as int,
-      countryCode: map['country_code'] as String,
-      countryName: map['country_name'] as String,
-      stickersStart: map['stickers_start'] as int,
-      stickersEnd: map['stickers_end'] as int,
+      id: map['id']?.toInt() ?? 0,
+      countryCode: map['country_code'] ?? '',
+      countryName: map['country_name'] ?? '',
+      stickersStart: map['stickers_start']?.toInt() ?? 0,
+      stickersEnd: map['stickers_end']?.toInt() ?? 0,
       stickers: List<UserStickerModel>.from(
-        (map['stickers']).map<UserStickerModel>(
-          (x) => UserStickerModel.fromMap(x as Map<String, dynamic>),
-        ),
-      ),
-      flag: map['flag'] as String,
+          map['stickers'].map((x) => UserStickerModel.fromMap(x))),
+      flag: map['flag'] ?? '',
     );
   }
 
   String toJson() => json.encode(toMap());
 
   factory GroupsStickers.fromJson(String source) =>
-      GroupsStickers.fromMap(json.decode(source) as Map<String, dynamic>);
+      GroupsStickers.fromMap(json.decode(source));
 }

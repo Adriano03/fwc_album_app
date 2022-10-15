@@ -101,7 +101,7 @@ class _HomePageState extends HomeViewImpl {
                       ),
                       Button(
                         onPressed: () {
-                          Navigator.of(context).pushNamed('/my_stickers');
+                          Navigator.of(context).pushNamed('/my-stickers');
                         },
                         width: MediaQuery.of(context).size.width * .9,
                         outline: true,

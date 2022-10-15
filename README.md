@@ -44,5 +44,12 @@ Aula 4 (passos)
 Aula 5 - FINAL (passos)
 - Organização das pastas;
 - Contruir tela detalhes figurinhas;
-- 
+- Entendendo o funcionamento da tela;
+- Implementar buscas detalhes da figurinha no backend;
+- Service Layer de buscar de figurinhas
+- Receber parãmetros para montar a view;
+- Adicionar e remover figurinhas;
+- Atualizando o album;
+ 
+
 
