@@ -32,6 +32,7 @@ class _LoginPageState extends LoginViewImpl {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: context.colors.primary,
       body: Form(
         key: formKey,
@@ -61,9 +62,10 @@ class _LoginPageState extends LoginViewImpl {
                     ),
                   ),
                   TextFormField(
+                    textInputAction: TextInputAction.next,
                     controller: emailEC,
                     validator: Validatorless.multiple([
-                      Validatorless.required('Obrigatório'),
+                      Validatorless.required('Campo E-mail é obrigatório!'),
                       Validatorless.email('E-mail inválido')
                     ]),
                     decoration: const InputDecoration(
@@ -78,7 +80,7 @@ class _LoginPageState extends LoginViewImpl {
                     obscureText: true,
                     controller: passwordEC,
                     validator: Validatorless.multiple([
-                      Validatorless.required('Obrigatório'),
+                      Validatorless.required('Campo Senha é obrigatório!'),
                       Validatorless.min(
                           6, 'Senha deve conter pelo menos 6 caracteres')
                     ]),
@@ -88,18 +90,25 @@ class _LoginPageState extends LoginViewImpl {
                     ),
                   ),
                   const SizedBox(
-                    height: 20,
+                    height: 8,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 6),
-                    child: Text(
-                      'Esqueceu a senha?',
-                      style: context.textStyles.textSecondaryFontMedium
-                          .copyWith(color: context.colors.yellow, fontSize: 14),
-                    ),
+                  Row(
+                    children: [
+                      TextButton(
+                        onPressed: () {
+                          showInfo('Função não implementada!');
+                        },
+                        child: Text(
+                          'Esqueceu a senha?',
+                          style: context.textStyles.textSecondaryFontMedium
+                              .copyWith(
+                                  color: context.colors.yellow, fontSize: 14),
+                        ),
+                      ),
+                    ],
                   ),
                   const SizedBox(
-                    height: 25,
+                    height: 15,
                   ),
                   Button(
                     onPressed: () {

@@ -71,20 +71,24 @@ class _RegisterPageState extends RegisterViewImpl {
                 child: Column(
                   children: [
                     TextFormField(
+                      textInputAction: TextInputAction.next,
+                      textCapitalization: TextCapitalization.words,
                       controller: nameEC,
                       decoration:
                           const InputDecoration(label: Text('Nome Completo *')),
-                      validator: Validatorless.required('Obrigatório'),
+                      validator:
+                          Validatorless.required('Campo Nome é obrigatório!'),
                     ),
                     const SizedBox(
                       height: 20,
                     ),
                     TextFormField(
+                      textInputAction: TextInputAction.next,
                       controller: emailEC,
                       decoration:
                           const InputDecoration(label: Text('E-mail *')),
                       validator: Validatorless.multiple([
-                        Validatorless.required('Obrigatório'),
+                        Validatorless.required('Campo E-mail é obrigatório!'),
                         Validatorless.email('E-mail inválido'),
                       ]),
                     ),
@@ -92,11 +96,12 @@ class _RegisterPageState extends RegisterViewImpl {
                       height: 20,
                     ),
                     TextFormField(
+                      textInputAction: TextInputAction.next,
                       controller: passwordEC,
                       obscureText: true,
                       decoration: const InputDecoration(label: Text('Senha *')),
                       validator: Validatorless.multiple([
-                        Validatorless.required('Obrigatório'),
+                        Validatorless.required('Campo Senha é obrigatório!'),
                         Validatorless.min(
                             6, 'Senha deve conter pelo menos 6 caracteres'),
                       ]),
@@ -110,11 +115,11 @@ class _RegisterPageState extends RegisterViewImpl {
                       decoration: const InputDecoration(
                           label: Text('Confirma Senha *')),
                       validator: Validatorless.multiple([
-                        Validatorless.required('Obrigatório'),
+                        Validatorless.required(
+                            'Campo Confirma Senha é obrigatório!'),
                         Validatorless.min(
                             6, 'Senha deve conter pelo menos 6 caracteres'),
-                        Validatorless.compare(
-                            passwordEC, 'Senha diferente de confirma senha')
+                        Validatorless.compare(passwordEC, 'Senhas diferentes!')
                       ]),
                     ),
                     const SizedBox(

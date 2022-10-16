@@ -51,3 +51,9 @@ Aula 5 - FINAL (passos)
 - Adicionar e remover figurinhas;
 - Atualizando o álbum;
  
+Melhorias/Correçõs
+- Corrigido tela home que não atualizada dados na volta;
+- Corrigido tela de Login com scroll;
+- Mensagem de info ao clicar em esqueceu a senha;
+- Melhoria nos formulários;
+- Fixar tela na vertical;
