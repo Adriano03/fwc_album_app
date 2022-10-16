@@ -100,8 +100,9 @@ class _HomePageState extends HomeViewImpl {
                         height: 20,
                       ),
                       Button(
-                        onPressed: () {
-                          Navigator.of(context).pushNamed('/my-stickers');
+                        onPressed: () async {
+                          await Navigator.of(context).pushNamed('/my-stickers');
+                          initState();
                         },
                         width: MediaQuery.of(context).size.width * .9,
                         outline: true,

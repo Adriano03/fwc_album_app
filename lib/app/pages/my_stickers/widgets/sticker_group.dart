@@ -117,7 +117,7 @@ class Sticker extends StatelessWidget {
           'countryCode': countryCode,
           'stickerNumber': stickerNumber,
           'countryName': countryName,
-          'stickerUser ': sticker,
+          'stickerUser': sticker,
         });
         presenter.refresh();
       },

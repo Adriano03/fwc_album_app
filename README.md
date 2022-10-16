@@ -29,7 +29,7 @@ Aula 3 (passos)
 - Alterando custom dio para enviar token de autenticação;
 - Deslogando usuário quando token expirar,
 - Construindo e componentizando Home;
-- Implementando busca de dados dos usuários e album;
+- Implementando busca de dados dos usuários e álbum;
 - Implementando tela;
 - Finalizando com o click para a tela de minhas figurinhas;
 
@@ -43,13 +43,11 @@ Aula 4 (passos)
 
 Aula 5 - FINAL (passos)
 - Organização das pastas;
-- Contruir tela detalhes figurinhas;
+- Construir tela detalhes figurinhas;
 - Entendendo o funcionamento da tela;
 - Implementar buscas detalhes da figurinha no backend;
 - Service Layer de buscar de figurinhas
-- Receber parãmetros para montar a view;
+- Receber parâmetros para montar a view;
 - Adicionar e remover figurinhas;
-- Atualizando o album;
+- Atualizando o álbum;
  
-
-
