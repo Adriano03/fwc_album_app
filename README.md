@@ -56,4 +56,3 @@ Melhorias/Correçõs
 - Corrigido tela de Login com scroll;
 - Mensagem de info ao clicar em esqueceu a senha;
 - Melhoria nos formulários;
-- Fixar tela na vertical;
